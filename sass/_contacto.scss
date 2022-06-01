@@ -1,0 +1,14 @@
+.contacto {
+    &__titulo {
+
+        &--h1 {
+            @extend .title
+        }
+    }
+
+    &__text {
+        &--span{
+            font-weight: bold;
+        }
+    }
+}

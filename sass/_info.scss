@@ -1,0 +1,69 @@
+.info {
+    &__h1 {
+        @extend .title
+    }
+
+    &__text {
+
+        &--iframe {
+            height: 500px;
+            width: 48%;
+        }
+
+        &--p {
+            height: auto;
+            width: 45%;
+            text-align: center;
+        }
+        
+    }
+
+    &__banner {
+        &--img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__img {
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        &--img {
+            height: 100%;
+            width: 100%;
+            padding: 0 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .info {
+        &__text {
+
+            &--iframe {
+                width: 100%;
+            }
+
+            &--p {
+                width: 100%;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 723px) {
+    .info {
+        &__img {
+            display: flex;
+            flex-direction: column;
+
+            &--img {
+                padding: 10px 0;
+            }
+        }
+    }
+}
